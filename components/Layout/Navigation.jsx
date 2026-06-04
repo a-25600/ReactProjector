@@ -2,10 +2,9 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 const Navigation = () => {
-    // Список рубрик та основних розділів
     const menuItems = [
         { name: 'Головна', path: '/' },
-        { name: 'Політика', path: '/category/politics' },
+        { name: 'Актуальні події', path: '/category/actual' },
         { name: 'Економіка', path: '/category/economy' },
         { name: 'Технології', path: '/category/tech' },
         { name: 'Спорт', path: '/category/sports' },
@@ -24,7 +23,7 @@ const Navigation = () => {
                             to={item.path}
                             className={({ isActive }) =>
                                 `text-sm font-medium transition-colors hover:text-blue-600 ${isActive
-                                    ? 'text-blue-700 border-b-2 border-blue-700 pb-[13px]' // Активний стан
+                                    ? 'text-blue-700 border-b-2 border-blue-700 pb-[13px]'
                                     : 'text-gray-700'
                                 }`
                             }
