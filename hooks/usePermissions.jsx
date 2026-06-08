@@ -1,54 +1,26 @@
-<<<<<<< HEAD
 import { useAuth } from './useAuth';
 
 export const usePermissions = () => {
     const { user } = useAuth();
 
-    const role = user?.role || 'Незареєстрований';
+    const role = user?.role || 'пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ';
 
     return {
-        canComment: ['Зареєстрований', 'Журналіст', 'Модератор', 'Адміністратор', 'Запрошений автор'].includes(role),
-        canVote: ['Зареєстрований', 'Журналіст', 'Модератор', 'Адміністратор', 'Запрошений автор'].includes(role),
-        canUseForum: ['Зареєстрований', 'Журналіст', 'Модератор', 'Адміністратор', 'Запрошений автор'].includes(role),
+        canComment: ['пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ', 'пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ', 'пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ', 'пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ', 'пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ'].includes(role),
+        canVote: ['пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ', 'пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ', 'пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ', 'пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ', 'пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ'].includes(role),
+        canUseForum: ['пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ', 'пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ', 'пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ', 'пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ', 'пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ'].includes(role),
 
-        canAddNews: ['Журналіст', 'Адміністратор'].includes(role),
+        canAddNews: ['пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ', 'пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ'].includes(role),
 
-        canModerateComments: ['Модератор', 'Адміністратор'].includes(role),
-        canEditNews: ['Модератор', 'Адміністратор'].includes(role),
-        canManageUsers: ['Модератор', 'Адміністратор'].includes(role),
+        canModerateComments: ['пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ', 'пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ'].includes(role),
+        canEditNews: ['пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ', 'пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ'].includes(role),
+        canManageUsers: ['пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ', 'пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ'].includes(role),
 
-        canAccessAdminPanel: ['Адміністратор'].includes(role),
-        canPublishWithoutApproval: ['Адміністратор'].includes(role),
-        canManageAds: ['Адміністратор'].includes(role),
-        canCreatePolls: ['Адміністратор'].includes(role),
+        canAccessAdminPanel: ['пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ'].includes(role),
+        canPublishWithoutApproval: ['пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ'].includes(role),
+        canManageAds: ['пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ'].includes(role),
+        canCreatePolls: ['пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ'].includes(role),
 
-        canWriteBlog: ['Запрошений автор', 'Адміністратор'].includes(role),
+        canWriteBlog: ['пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ', 'пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ'].includes(role),
     };
-=======
-import { useAuth } from './useAuth';
-
-export const usePermissions = () => {
-    const { user } = useAuth();
-
-    const role = user?.role || 'Незареєстрований';
-
-    return {
-        canComment: ['Зареєстрований', 'Журналіст', 'Модератор', 'Адміністратор', 'Запрошений автор'].includes(role),
-        canVote: ['Зареєстрований', 'Журналіст', 'Модератор', 'Адміністратор', 'Запрошений автор'].includes(role),
-        canUseForum: ['Зареєстрований', 'Журналіст', 'Модератор', 'Адміністратор', 'Запрошений автор'].includes(role),
-
-        canAddNews: ['Журналіст', 'Адміністратор'].includes(role),
-
-        canModerateComments: ['Модератор', 'Адміністратор'].includes(role),
-        canEditNews: ['Модератор', 'Адміністратор'].includes(role),
-        canManageUsers: ['Модератор', 'Адміністратор'].includes(role),
-
-        canAccessAdminPanel: ['Адміністратор'].includes(role),
-        canPublishWithoutApproval: ['Адміністратор'].includes(role),
-        canManageAds: ['Адміністратор'].includes(role),
-        canCreatePolls: ['Адміністратор'].includes(role),
-
-        canWriteBlog: ['Запрошений автор', 'Адміністратор'].includes(role),
-    };
->>>>>>> upstream/main
 };

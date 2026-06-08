@@ -3,15 +3,15 @@ import { NavLink } from 'react-router-dom';
 
 const Navigation = () => {
     const menuItems = [
-        { name: 'Головна', path: '/' },
-        { name: 'Актуальні події', path: '/category/actual' },
-        { name: 'Економіка', path: '/category/economy' },
-        { name: 'Технології', path: '/category/tech' },
-        { name: 'Спорт', path: '/category/sports' },
-        { name: 'Блоги', path: '/blogs' },
-        { name: 'Подкасти', path: '/podcasts' },
-        { name: 'Відео', path: '/video' },
-        { name: 'Форум', path: '/forum' },
+        { name: 'Р“РѕР»РѕРІРЅР°', path: '/' },
+        { name: 'РђРєС‚СѓР°Р»СЊРЅС– РЅРѕРІРёРЅРё', path: '/category/actual' },
+        { name: 'Р•РєРѕРЅРѕРјС–РєР°', path: '/category/economy' },
+        { name: 'РўРµС…РЅРѕР»РѕРіС–С—', path: '/category/tech' },
+        { name: 'РЎРїРѕСЂС‚', path: '/category/sports' },
+        { name: 'Р‘Р»РѕРіРё', path: '/blogs' },
+        { name: 'РџРѕРґРєР°СЃС‚Рё', path: '/podcasts' },
+        { name: 'Р’С–РґРµРѕ', path: '/video' },
+        { name: 'Р¤РѕСЂСѓРј', path: '/forum' },
     ];
 
     return (
