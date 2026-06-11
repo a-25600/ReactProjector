@@ -1,0 +1,15 @@
+# Цей рядок вказує редакторам, що це головний файл конфігурації
+root = true
+
+# Застосовувати ці правила до всіх файлів у проєкті
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+indent_style = space
+indent_size = 2
+
+# Для файлів бекенду (C#) часто використовують 4 пробіли
+[*.cs]
+indent_size = 4
